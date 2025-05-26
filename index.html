@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portefolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbarP">
+            <nav class="navbar">
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#"></a>Mon portfolio</li>
+                    <li><a href="#"></a>Contact</li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="bg-color pb-96">
+
+            <div class="contenaire">
+                <h1 class="title"
+                >Quelques unes de mes créations</h1>
+            </div>
+            <!-- création d'une div contenant tous le slider -->
+            <div class="slider">
+                <!-- on appelle tous les fichiers images qui serviront au slider -->
+                <div>
+                    <img src="slide1.jpg" alt="illustration" class="slide-img active">
+                    <img src="slide2.jpg" alt="illustration" class="slide-img">
+                    <img src="slide3.jpg" alt="illustration" class="slide-img">
+                    <img src="slide4.jpg" alt="illustration" class="slide-img">
+                    <img src="slide5.jpg" alt="illustration" class="slide-img">
+                    <img src="slide6.jpg" alt="illustration" class="slide-img">
+                </div>
+                <!-- création du contenaire contenant les "dots" qui serviront au suivis du slider -->
+                <div class="dots-contenaire">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+     <script src="script.js"></script>
+</body>
+</html>

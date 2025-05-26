@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playwrite-dk-loopet';
+  font-size: large;
+}
+
+.navbar {
+  padding: 20px;
+  background-color: #27abad;
+  color: white;
+  position: relative;
+}
+.navbarP {
+  padding: 20px;
+  background-color: #27abad;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+
+.burger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  display: block;
+  transition: 0.3s ease;
+}
+.burger2 span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Responsive : menu burger sur petit écran */
+@media screen and (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+  
+  .burger2 {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #27abad;
+;
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+}
+.contenaire{
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  
+}
+}
+.title{
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 50px;
+    font-family: 'Playwrite-dk-loopet';
+    color: #209193;
+}
+.bg-color{
+  background-color: rgba(250, 218, 179, 0.995);
+}
+.pb-96{
+  padding-bottom: 6rem;
+}
+
+.slider{
+    max-width: 100%;
+    height: 30rem;
+    margin: 6.25rem auto 0;
+    position: relative;
+}
+.slide-img{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.45 ease-out;
+}
+.slide-img.active{
+    opacity: 1;
+}
+/* mise en place des "dots" de repère */
+.dots-contenaire{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.45s ease;
+}
+.dot.active{
+    background-color: #fff;
+}
